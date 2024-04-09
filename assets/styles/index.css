@@ -226,7 +226,6 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  margin-top: 50px;
 }
 
 @media (max-width: 760px) {
@@ -239,14 +238,14 @@ body {
 .student__section {
   background-color: black;
   color: white;
-  padding: 50px 10px;
+  padding-top: 50px;
 }
 .student__hero {
   display: flex;
   gap: 20px;
-  align-items: center;
+  /* align-items: center; */
   max-width: 1600px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 .student__hero img {
   max-width: 450px;
@@ -288,10 +287,11 @@ body {
   text-align: center;
 }
 .student__hero-para {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   text-align: center;
   margin-top: 20px;
+  line-height: 24px;
 }
 .student__hero-responsive {
   display: none;
@@ -363,4 +363,104 @@ body {
     line-height: 30px;
     text-align: center;
   }
+}
+
+.student__hero-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.student__hero-2-img {
+  max-width: 600px;
+  height: auto;
+}
+
+@media (max-width: 1100px) {
+  .student__hero-2-img {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .student__hero-2-img {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+
+.student__hero-3 {
+  display: flex;
+}
+
+.student__hero-3-img {
+  max-width: 50%;
+  height: auto;
+  flex-basis: 50%;
+}
+
+.hero-3-img-1 {
+  content: url("/assets/images/student-img-4-lg.png");
+}
+.hero-3-img-2 {
+  content: url("/assets/images/student-img-5-lg.png");
+}
+.hero-3-img-3 {
+  content: url("/assets/images/student-img-6-lg.png");
+}
+.hero-3-img-4 {
+  content: url("/assets/images/student-img-7-lg.png");
+}
+
+/* Styling for small screens */
+@media only screen and (max-width: 600px) {
+  .hero-3-img-1 {
+    content: url("/assets/images/student-img-4-sm.png");
+  }
+  .hero-3-img-2 {
+    content: url("/assets/images/student-img-5-sm.png");
+  }
+  .hero-3-img-3 {
+    content: url("/assets/images/student-img-6-sm.png");
+  }
+  .hero-3-img-4 {
+    content: url("/assets/images/student-img-7-sm.png");
+  }
+}
+
+/* Styling for medium screens */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .hero-3-img-1 {
+    content: url("/assets/images/student-img-4-md.png");
+  }
+  .hero-3-img-2 {
+    content: url("/assets/images/student-img-5-md.png");
+  }
+  .hero-3-img-3 {
+    content: url("/assets/images/student-img-6-md.png");
+  }
+  .hero-3-img-4 {
+    content: url("/assets/images/student-img-7-md.png");
+  }
+}
+
+/* Styling for large screens */
+@media only screen and (min-width: 1400px) {
+  .hero-3-img-1 {
+    content: url("/assets/images/student-img-4-xl.png");
+  }
+  .hero-3-img-2 {
+    content: url("/assets/images/student-img-5-xl.png");
+  }
+  .hero-3-img-3 {
+    content: url("/assets/images/student-img-6-xl.png");
+  }
+  .hero-3-img-4 {
+    content: url("/assets/images/student-img-7-xl.png");
+  }
+}
+
+.student__pagination-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
