@@ -464,3 +464,18 @@ body {
   justify-content: space-between;
   gap: 30px;
 }
+
+@media screen and (max-width: 660px) {
+  .fashion-container {
+    height: 70vh;
+  }
+  #video-bg {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  #video-bg {
+    width: 100%;
+  }
+}
